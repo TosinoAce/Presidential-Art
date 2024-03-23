@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  position: relative;
+  background-color: #ebebeb;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+}
+.heroContainer {
+  display: flex;
+  height: 100%;
+  clip-path: polygon(0 85%, 0 0, 100% 0, 100% 83%, 26% 100%);
+}
+.heroContainer > div {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  background-color: white;
+}
+.heroContainer > img {
+  width: 48%;
+  height: 100%;
+}
+#end {
+  width: 7%;
+}
+header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 5px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+header ul li {
+  color: black;
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  font-family: "Lost Emerald", sans-serif;
+}
+header ul li:hover {
+  color: #636363;
+}
+header > div > img {
+  width: 50px;
+}
+h1 {
+  font-size: 50px;
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+}
+.heroContainer button {
+  width: 170px;
+  height: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+.heroContainer button:hover{
+  background-color: transparent;
+  border: 1px solid orangered;
+  color: orangered;
+}
+.heroContainer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #636363;
+}
+.intro {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px;
+}
+.intro > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+.intro > div > div > p {
+  text-align: right;
+  font-family: "poppins", sans-serif;
+  color: #636363;
+}
+.intro > div > div > h2 {
+  text-align: right;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "League Spartan", sans-serif;
+}
+#grey {
+  color: gray;
+  font-size: 42px;
+}
+#gray {
+  color: #c7c7c7;
+  font-size: 44px;
+}
+#white {
+  color: #ffffff;
+  font-size: 46px;
+}
+#orange {
+  color: orangered;
+  font-size: 48px;
+}
+.portfolio{
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(./images/pexels-markus-spiske-260041.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  gap: 10px;
+}
+.portfolio::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.portfolio div{
+  width: 300px;
+  height: 430px;
+  background-color: #ffffff;
+  z-index: 10;
+  padding: 25px;
+  position: relative;
+}
+
+.portfolio p{
+  padding: 10px 25px;
+  background-color: #c7c7c7;
+  text-align: center;
+  font-family: 'h Haruno', sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  color: #636363;
+}
+.portfolio img{
+  width: 250px;
+  height: 300px;
+}
+.reviewContainer{
+  width: 100%;
+  padding: 50px;
+  min-height: 70vh;
+}
+.review{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.review > div{
+  width: 400px;
+  padding: 20px;
+  transition: 0.4s ease-in-out;
+}
+.review > div > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 35px 0;
+  text-align: center;
+}
+.review p{
+  margin-bottom: 30px;
+  font-family: "poppins", serif;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #636363;
+}
+.user{
+  width: 100%;
+  font-size: 17px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Lost Emerald", sans-serif;
+  color: #636363;
+}
+.reviewContainer h2{
+  font-size: 35px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.contact{
+  width: 100%;
+  height: 90vh;
+  background-color: #ffffff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact img{
+  width: 500px;
+}
+.contact h2{
+  font-family: "League Spartan", sans-serif;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.contact p{
+  font-family: "poppins", sans-serif;
+  margin-bottom: 15px;
+}
+.contact svg{
+  margin-top: 10px;
+  margin-right: 30px;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.contact svg:hover{
+  color: #c7c7c7;
+}
+footer{
+  padding: 50px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  align-items: flex-start;
+}
+footer img{
+  width: 60px;
+}
+footer ul{
+  list-style: none;
+}
+footer li{
+  font-family: "poppins", serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #636363;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+footer li:hover{
+  text-decoration: underline;
+}
+footer p{
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  line-height: 140%;
+  color: #636363;
+  font-family: "League Spartan", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contact{
+    padding: 20px;
+  }
+  .contact img{
+    display: none;
+  }
+  .reviewContainer{
+    padding: 10px;
+  }
+  .portfolio{
+    overflow: scroll;
+  }
+  .intro{
+    padding: 20px;
+  }
+  .intro > div{
+    flex-direction: column;
+  }
+  .intro > div > div{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .intro img{
+    width: 300px;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+  #grey, #gray, #white, #orange{
+    font-size: 30px;
+    text-align: center;
+  }
+  header{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 20px;
+  }
+  .heroContainer{
+    flex-direction: column-reverse;
+    padding: 10px;
+    clip-path: none;
+  }
+  #end{
+    display: none;
+  }
+  header ul{
+    justify-content: center;
+  }
+.heroContainer > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  background-color: white;
+}
+.heroContainer > img {
+  width: 100%;
+  height: 100%;
+}
+body{
+  padding-top: 150px;
+}
+h1{
+  font-size: 32px;
+}
+}
